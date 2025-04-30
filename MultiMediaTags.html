@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head><h1>Multi media tags</h1></head><br>
+    <body>
+       
+        <video width="250" height="250" controls>
+            <source src="thangamey.mp4.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/.ogg">
+          </video>
+          <br> <br>
+          <div> 
+            <button onclick="playPause()">Play/Pause</button> 
+            <button onclick="makeBig()">Big</button>
+            <button onclick="makeSmall()">Small</button>
+            <button onclick="makeNormal()">Normal</button>
+            <br><br>
+          <script> 
+            var myVideo = document.getElementById("video1"); 
+            
+            function playPause() { 
+              if (myVideo.paused) 
+                myVideo.play(); 
+              else 
+                myVideo.pause(); 
+            } 
+            
+            function makeBig() { 
+                myVideo.width = 600; 
+            } 
+            
+            function makeSmall() { 
+                myVideo.width = 300; 
+            } 
+            
+            function makeNormal() { 
+                myVideo.width = 450; 
+            } 
+            </script> 
+            <br> <br>
+            <audio controls>
+                <source src="pikachu,mp3.m4a" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+              </audio> <br> <br>
+              <object data="beach.jpg"></object> <br> <br>
+              <iframe width="250" height="250"
+src="https://www.youtube.com/watch?v=gdZLi9oWNZg">
+</iframe>
+
+    </body>
+</html>
